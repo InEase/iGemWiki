@@ -22,9 +22,9 @@ import { readFileSync } from "fs"
 // https://vitejs.dev/config/
 export default defineConfig({
   server: {
-    fs: {
-      allow: [".."]
-    }
+    // fs: {
+    //   allow: [".."]
+    // }
   },
   resolve: {
     alias: {
