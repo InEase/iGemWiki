@@ -119,9 +119,8 @@ export default defineConfig({
     VitePWA({
       includeAssets: ["favicon.ico", "robots.txt"],
       manifest: {
-        // You can change this name into your own
-        name: "Elucidator Blog Starter",
-        short_name: "Elucidator",
+        name: "iGemWiki",
+        short_name: "iGem",
         description: "A blog starter with Vite.js",
         theme_color: "#347f76",
         icons: [

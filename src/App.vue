@@ -2,11 +2,11 @@
 // In this section, we use @vueuse/head. Check this for more detail
 // https://github.com/vueuse/head
 useHead({
-  title: "Elucidator Blog Starter",
+  title: "iGem Wiki-队名我忘了",
   meta: [
     {
       name: "description",
-      content: "Elucidator blog starter for vue and vite",
+      content: "iGem Wiki",
     },
   ],
 })

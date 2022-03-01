@@ -46,15 +46,15 @@ router.afterEach(() => {
 // Navbar list
 const dataNavbar: NavbarMenu[] = [
   {
-    name: 'Home',
+    name: '主页',
     to: '/'
   },
   {
-    name: 'Articles',
+    name: '文章',
     to: '/articles'
   },
   {
-    name: 'About',
+    name: '关于我们',
     to: '/about'
   }
 ]
@@ -69,7 +69,8 @@ const dataNavbar: NavbarMenu[] = [
     <div class="max-w-screen-lg mx-auto h-full flex flex-row items-center space-x-4">
       <div class="logo flex-1">
         <router-link to="/" class="font-bold lg:tracking-wide text-2xl ">
-            Elucidator Blog
+        <!-- (记得写队名) -->
+            iGem Wiki
         </router-link>
       </div>
       <div class="flex flex-wrap items-center">
@@ -85,36 +86,26 @@ const dataNavbar: NavbarMenu[] = [
           class="mr-5 cursor-pointer text-elucidator-700 dark:text-dark-repulser-400"
           tabindex="0"
           @click="toggleDark"
-          title="Toggle light mode"
+          title="切换白天"
         />
         <carbon-moon
           v-else
           class="mr-5 cursor-pointer text-elucidator-700 dark:text-dark-repulser-400"
           tabindex="0"
           @click="toggleDark"
-          title="Toggle dark mode"
+          title="切换夜间模式"
         />
         <carbon-search
           class="mr-5 cursor-pointer text-elucidator-700 dark:text-dark-repulser-400"
           tabindex="0"
           @click="setSearch"
-          title="Search articles.."
+          title="搜索文章"
         />
-        <a
-          href="https://github.com/satyawikananda/elucidator-blog-starter"
-          target="_blank"
-          rel="noreferrer"
-          title="repository github"
-        >
-          <uil-github
-            class="flex cursor-pointer text-elucidator-700 dark:text-dark-repulser-400"
-          />
-        </a>
         <carbon-menu
           class="cursor-pointer text-elucidator-700 dark:text-dark-repulser-400 ml-5 sm:block lg:hidden"
           tabindex="0"
           @click="setOpen"
-        />
+        /> 
       </div>
     </div>
   </nav>

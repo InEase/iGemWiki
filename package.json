@@ -1,16 +1,13 @@
 {
-  "name": "elucidator-blog-starter",
+  "name": "mux-igem-main-page",
   "version": "1.0.0",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
     "build": "cross-env NODE_ENV=production vite-ssg build",
     "serve": "vite preview"
   },
-  "author": "Satya Wikananda <satyawikananda456@gmail.com>",
+  "author": "Mux",
   "keywords": [
-    "blog",
-    "blog-starter",
-    "template-starter",
     "typescript",
     "vite",
     "vue",

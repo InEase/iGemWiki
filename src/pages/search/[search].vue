@@ -32,8 +32,8 @@ const clickEndPage = () => {
 <template>
   <div class="flex flex-col flex-wrap mb-2 px-4 lg:px-0">
     <h1
-      class="text-3xl text-elucidator-700 dark:text-dark-repulser-400 font-bold"
-    >Search: {{ searchParams }} ({{ getArticlesSearch([unslug(searchParams)]).length }})</h1>
+      class="p-5 text-3xl text-elucidator-700 dark:text-dark-repulser-400 font-bold"
+    >搜索： {{ searchParams }} ({{ getArticlesSearch([unslug(searchParams)]).length }})</h1>
     <div class="flex flex-col flex-wrap mb-2">
       <div
         class="mx-auto grid inline-grid gap-4 py-10 lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2"

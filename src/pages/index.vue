@@ -15,9 +15,7 @@ const articles = computed(() => {
 
 <template>
   <div class="inline-grid px-4 lg:px-0">
-    <h1
-      class="mb-5 text-3xl text-elucidator-700 dark:text-dark-repulser-400 font-bold"
-    >Latest Article</h1>
+    <h1 class="p-5 mb-5 text-3xl text-elucidator-700 dark:text-dark-repulser-400 font-bold">最新文章</h1>
     <Latest
       :image="latest.thumbnail"
       :alt="`blog-banner-${slug(latest.name)}`"
@@ -31,14 +29,14 @@ const articles = computed(() => {
   </div>
   <div class="flex flex-col flex-wrap mb-2 mt-12 px-4 lg:px-0">
     <div class="grid inline-grid grid-cols-2 mb-5">
-      <h1 class="text-3xl font-bold text-elucidator-700 dark:text-dark-repulser-400">All post</h1>
+      <h1 class="p-5 text-3xl font-bold text-elucidator-700 dark:text-dark-repulser-400">全部文章</h1>
       <router-link
         to="/articles"
         class="cursor-pointer text-right my-auto text-elucidator-700 dark:text-dark-repulser-400"
       >See all</router-link>
     </div>
     <div
-      class="mx-auto inline-grid gap-4 mb-5 sm:grid lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2 gap-10"
+      class="p-5 mx-auto inline-grid gap-4 mb-5 sm:grid lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2 gap-10"
     >
       <Article
         v-for="(data, i) in articles"

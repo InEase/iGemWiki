@@ -105,13 +105,14 @@ if (isClient) {
       class="w-full h-md object-cover rounded-md shadow-lg"
       loading="lazy"
     />
-    <div
+    <slot />
+    <!-- <div
       class="mt-5 mb-5 text-elucidator-500 divide-y dark:text-elucidator-50"
       style="border-bottom: 1px solid #63C0B6;"
-    >
-      <slot />
-    </div>
-    <h2
+    > -->
+      <!-- <slot />
+    </div> -->
+    <!-- <h2
       class="text-center text-3xl font-bold text-elucidator-700 dark:text-dark-repulser-400 mt-5 mb-4"
     >Share this article</h2>
     <div class="flex flex-wrap justify-center items-center">
@@ -129,13 +130,13 @@ if (isClient) {
         :twitter-user="share.twitterUser"
         :media="share.media"
       />
-    </div>
-    <div class="mt-5 mb-5">
+    </div> -->
+    <!-- <div class="mt-5 mb-5">
       <client-only>
         <Disqus />
       </client-only>
-    </div>
-    <div class="flex flex-wrap flex-col px-4 lg:px-0">
+    </div> -->
+    <!-- <div class="flex flex-wrap flex-col px-4 lg:px-0">
       <h1
         class="mb-5 mt-8 text-3xl text-elucidator-700 dark:text-dark-repulser-400 font-bold"
       >Related Articles</h1>
@@ -153,6 +154,6 @@ if (isClient) {
           :to-tags="`/tags/${data.meta.frontmatter.tags}`"
         />
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
