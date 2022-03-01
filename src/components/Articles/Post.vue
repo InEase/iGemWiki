@@ -89,17 +89,19 @@ if (isClient) {
     <h1
       class="mb-5 text-transparent bg-clip-text bg-gradient-to-r text-center font-bold text-5xl from-elucidator-500 to-elucidator-700 dark:from-dark-repulser-500 dark:to-dark-repulser-300 md:block"
     >{{ frontmatter.name }}</h1>
-    <p
+    <p 
+      v-if="frontmatter.description"
       class="text-center font-normal mb-5 text-dark-100 dark:text-elucidator-50"
     >{{ frontmatter.description }}</p>
-    <div class="flex flex-row flex-wrap justify-center">
+    <div class="flex flex-row flex-wrap justify-center" v-if="frontmatter.date">
       <carbon-calendar class="mr-1 mt-2px dark:text-elucidator-50" />
       <p
         class="text-center text-dark-100 font-light mb-5 dark:text-elucidator-50"
       >{{ new Date(frontmatter.date).toDateString() }}</p>
     </div>
-    <Tag :tags="frontmatter.tags" class="mb-5 flex flex-row justify-center" />
+    <Tag v-if="frontmatter.tags" :tags="frontmatter.tags" class="mb-5 flex flex-row justify-center" />
     <img
+      v-if="frontmatter.thumbnail"
       :src="frontmatter.thumbnail"
       :alt="`thumbnail-${frontmatter.name}`"
       class="w-full h-md object-cover rounded-md shadow-lg"

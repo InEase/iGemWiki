@@ -1,14 +1,19 @@
 <script setup lang="ts">
-// import Persons from '~/components/Persons.vue';
-
-
+// const props = defineProps<{
+//     image: string
+//     alt: string
+//     tags: Array<string>
+//     date: string
+//     title: string
+//     description?: string
+//     to: string
+//     toTags: string
+// }>()
 </script>
 
 <template>
-  <h1 class="text-elucidator-700 dark:text-dark-repulser-400 px-4 lg:px-0">this is about page 还没写</h1>
-  <!-- <Persons /> -->
-  <div class="max-w-lg rounded shadow-lg card-hover flex flex-col">
-        <div>demo flex shadow </div>
+    <router-link class="max-w-lg rounded shadow-lg card-hover flex flex-col">
+        <div>hello</div>
         <!-- <img
             :src="$props.image"
             class="h-auto object-cover w-full"
@@ -31,5 +36,16 @@
                 <Tag :tags="$props.tags" class="mb-5 flex flex-wrap flex-row justify-start" />
             </div>
         </div>-->
-    </div>
+    </router-link>
 </template>
+
+<style lang="scss">
+.card-hover {
+    transition: all 0.3s ease;
+    position: relative;
+    top: 0;
+    &:hover {
+        top: -10px;
+    }
+}
+</style>

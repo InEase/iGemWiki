@@ -48,6 +48,10 @@ const dataNavbar: NavbarMenu[] = [
   {
     name: '主页',
     to: '/'
+  }, 
+  {
+    name: '重金属的危害',
+    to: '/posts/overview'
   },
   {
     name: '文章',
@@ -68,14 +72,14 @@ const dataNavbar: NavbarMenu[] = [
   >
     <div class="max-w-screen-lg mx-auto h-full flex flex-row items-center space-x-4">
       <div class="logo flex-1">
-        <router-link to="/" class="font-bold lg:tracking-wide text-2xl ">
-        <!-- (记得写队名) -->
-            iGem Wiki
+        <router-link to="/" class="font-bold lg:tracking-wide text-2xl">
+          <!-- (记得写队名) -->
+          iGem Wiki
         </router-link>
       </div>
       <div class="flex flex-wrap items-center">
         <router-link
-          v-for="(data,i) in dataNavbar"
+          v-for="(data, i) in dataNavbar"
           :key="i"
           class="mr-5 py-1.5 px-3 rounded-md text-elucidator-700 dark:text-dark-repulser-400 dark:hover:text-elucidator-300 hover:text-gray-900 hidden lg:block"
           :to="data.to"
@@ -105,7 +109,7 @@ const dataNavbar: NavbarMenu[] = [
           class="cursor-pointer text-elucidator-700 dark:text-dark-repulser-400 ml-5 sm:block lg:hidden"
           tabindex="0"
           @click="setOpen"
-        /> 
+        />
       </div>
     </div>
   </nav>

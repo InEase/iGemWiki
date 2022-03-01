@@ -19,6 +19,9 @@ export const unslug = (str: string): string => {
 }
 
 export const limitString = (str: string, limit: number): string => {
+  if(str === undefined){
+    return str
+  }
   const string = str
   const length = limit
   const result =

@@ -33,7 +33,7 @@ const articles = computed(() => {
       <router-link
         to="/articles"
         class="cursor-pointer text-right my-auto text-elucidator-700 dark:text-dark-repulser-400"
-      >See all</router-link>
+      >全部的文章戳这里~</router-link>
     </div>
     <div
       class="p-5 mx-auto inline-grid gap-4 mb-5 sm:grid lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2 gap-10"
