@@ -1,1 +1,0 @@
-import{e as a,o,c as s,F as t,b as e}from"./vendor.dd3ff4b7.js";const l=e("h1",{class:"text-elucidator-700 dark:text-dark-repulser-400 px-4 lg:px-0"},"this is about page \u8FD8\u6CA1\u5199",-1),r=e("div",{class:"max-w-lg rounded shadow-lg card-hover flex flex-col"},[e("div",null,"demo flex shadow ")],-1),p=a({setup(c){return(d,n)=>(o(),s(t,null,[l,r],64))}});export{p as default};
